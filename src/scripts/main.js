@@ -4,8 +4,6 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   // write code here
   const notification = document.createElement('div');
 
-  notification.style.position = 'absolute';
-
   notification.classList.add('notification', type);
   notification.style.top = `${posTop}px`;
   notification.style.right = `${posRight}px`;
