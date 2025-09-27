@@ -18,8 +18,7 @@ const pushNotification = (posTop, posRight, title, description, type) => {
   notifDescription.classList.add('description');
   notifDescription.textContent = description;
 
-  notification.appendChild(notifTitle);
-  notification.appendChild(notifDescription);
+  notification.append(notifTitle, notifDescription);
   document.body.append(notification);
 
   setTimeout(() => {
